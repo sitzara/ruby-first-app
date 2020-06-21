@@ -96,3 +96,7 @@ mysql -u root -p
 
 [jre](https://www.java.com/ru/download/windows-64bit.jsp)
 [dbeaver](https://dbeaver.io/)
+
+## VSCode
+Problem with remote-wsl permission denied
+`sudo chown -R USER_NAME /path/to/project/`
