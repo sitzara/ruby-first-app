@@ -5,11 +5,14 @@
 ### Ruby
 `sudo apt install ruby`
 
+
 ### SQLite
 `sudo apt install sqlite3 libsqlite3-dev`
 
+
 ### Node.js
 `sudo apt install nodejs`
+
 
 ### Yarn
 `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
@@ -19,36 +22,51 @@
 
 `sudo apt install yarn`
 
+
 ### Rails
 
+Installing addintional packages for Rails
 `sudo apt install gcc g++ make zlib1g-dev`
 
-And finaly
-
+Installing Rails
 `sudo gem install rails`
+
 
 #### Bundler for Ruby
 [Bundler](https://bundler.io/) provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed. 
-
 `sudo gem install bundler`
 
-`sudo bundle install` - installing gems
+Installing gems
+`sudo bundle install`
+
 
 #### Webpacker
 `sudo rails webpacker:install`
 
+
 #### MySQL Adapter
 `sudo apt install libmysqlclient-dev`
+
 `sudo gem install mysql2`
+
+After that need to add configuration data to `config/database.yml`
+```
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: [DB_NAME]
+  username: root
+  password: ''
+  host: 127.0.0.1
+  port: 3306
+```
 
 #### Starting webserver
 `rails server`
 
 
 ## Installing MySQL
-`sudo apt install mysql-server`
-
-`sudo apt install mysql-client`
+`sudo apt install mysql-server mysql-client`
 
 ### Root user reset password
 ```
