@@ -92,6 +92,11 @@ sudo /etc/init.d/mysql start # reset mysql
 mysql -u root -p 
 ```
 
+### Start MySQL
+
+`sudo systemctl start mysqld.service` - start MySQL
+`sudo systemctl enable mysqld.service` - enable autostart
+
 ## Dbeaver
 
 [jre](https://www.java.com/ru/download/windows-64bit.jsp)
