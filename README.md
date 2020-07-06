@@ -61,6 +61,10 @@ development:
   port: 3306
 ```
 
+#### Postgresql Adapter
+`sudo apt-get install libpq-dev`
+`sudo gem install pg`
+
 #### Starting webserver
 `rails server`
 
